@@ -15,9 +15,9 @@ const ATMDeposit = ({ onChange, isDeposit }) => {
     const [totalState, setTotalState] = React.useState(0);
     const [isDeposit, setIsDeposit] = React.useState(true);
 
-    if (!isDeposit && deposit > totalState) { // Check for over-withdrawal
+    if (!isDeposit && deposit > totalState) { 
         alert('Insufficient Funds - Unable to Complete Transaction');
-        return; // Prevent further action if withdrawal is invalid
+        return; 
       }
 
 
@@ -43,6 +43,6 @@ const ATMDeposit = ({ onChange, isDeposit }) => {
       </form>
     );
   };
-  // ========================================
+ 
   ReactDOM.render(<Account />, document.getElementById("root"));
   
