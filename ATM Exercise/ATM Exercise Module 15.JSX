@@ -16,7 +16,7 @@ const ATMDeposit = ({ onChange, isDeposit }) => {
     const [isDeposit, setIsDeposit] = React.useState(true);
 
     if (!isDeposit && deposit > totalState) { // Check for over-withdrawal
-        alert('You cannot withdraw more money than you have in your deposit!');
+        alert('Incificient Funds - Unable to Complete Transaction');
         return; // Prevent further action if withdrawal is invalid
       }
 
