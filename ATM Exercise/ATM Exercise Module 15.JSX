@@ -1,5 +1,5 @@
 const ATMDeposit = ({ onChange, isDeposit }) => {
-    const choice = ["Deposit", "Cash Back"];
+    const choice = ["Deposit", "Withdraw"];
     console.log(`ATM isDeposit: ${isDeposit}`);
     return (
       <label>
